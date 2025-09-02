@@ -13,7 +13,8 @@ body{
 
 .quote-box{
     background: #fff;
-    width: 700px;
+    width: 90%; /* Use a percentage for a fluid width */
+    max-width: 700px; /* Set a max-width to prevent it from getting too large on desktops */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,4 +99,53 @@ body{
 .quote-box button:nth-child(2){
     background: transparent;
     color: #333;
+}
+
+/* --- */
+
+@media only screen and (max-width: 600px) {
+    .quote-box {
+        padding: 20px;
+    }
+
+    .quote-box h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .quote-box blockquote {
+        font-size: 18px;
+        min-height: 80px;
+    }
+
+    .quote-box button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .quote-box {
+        padding: 15px;
+    }
+    
+    .quote-box blockquote {
+        font-size: 16px;
+        min-height: 60px;
+    }
+
+    .quote-box h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .quote-box div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-box button {
+        margin: 5px 0;
+    }
 }

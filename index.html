@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quote of the day, short famous quotes</title>
-  <meta name="description" content="A short, famous quote for today, with a new one on every tap. Copy it or share it on X.">
+  <title>Quote of the Day: Short Famous Quotes | zakyprojects</title>
+  <meta name="description" content="Quote of the day: one short, famous quote for today, with a new one on every tap. Copy it or share it on X. Free, with no sign-up or ads.">
   <link rel="canonical" href="https://zakyprojects.github.io/quotes-generator/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Zakria Khan">
-  <meta property="og:title" content="Quote of the day, short famous quotes">
-  <meta property="og:description" content="A short, famous quote for today, with a new one on every tap. Copy it or share it on X.">
+  <meta property="og:title" content="Quote of the Day: Short Famous Quotes | zakyprojects">
+  <meta property="og:description" content="Quote of the day: one short, famous quote for today, with a new one on every tap. Copy it or share it on X. Free, with no sign-up or ads.">
   <meta property="og:url" content="https://zakyprojects.github.io/quotes-generator/">
-  <meta name="twitter:card" content="summary">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Quote of the day", "url": "https://zakyprojects.github.io/quotes-generator/", "description": "A short, famous quote for today, with a new one on every tap. Copy it or share it on X.", "applicationCategory": "LifestyleApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Zakria Khan", "url": "https://zakyprojects.github.io/"}}</script>
+  <meta property="og:image" content="https://zakyprojects.github.io/quotes-generator/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Quote of the day", "url": "https://zakyprojects.github.io/quotes-generator/", "description": "Quote of the day: one short, famous quote for today, with a new one on every tap. Copy it or share it on X. Free, with no sign-up or ads.", "applicationCategory": "LifestyleApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Zakria Khan", "url": "https://zakyprojects.github.io/"}}</script>
   <meta name="theme-color" content="#f5f0e6">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
@@ -25,6 +28,7 @@
       if (t === 'dark') document.documentElement.dataset.theme = 'dark';
     } catch (e) {}
   </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free and needs no account."}}, {"@type": "Question", "name": "Does the quote change every day?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Everyone sees the same quote on the same day, and New quote gives you more."}}, {"@type": "Question", "name": "Will I see the same quote twice?", "acceptedAnswer": {"@type": "Answer", "text": "Not until you have seen all of them."}}, {"@type": "Question", "name": "Who made it?", "acceptedAnswer": {"@type": "Answer", "text": "Zakria Khan, a web developer. You can see his other projects on zakyprojects.github.io."}}]}</script>
 </head>
 <body>
   <header class="top">
@@ -39,6 +43,7 @@
   </header>
 
   <main class="stage">
+    <h1 class="sr-only">Quote of the day</h1>
     <p class="label" id="label">Quote of the day</p>
     <figure class="quote" id="quote-box" aria-live="polite">
       <blockquote id="quote-text">Loading…</blockquote>
@@ -53,7 +58,23 @@
     <p class="hint">Tip: press Space for a new quote.</p>
   </main>
 
-  <footer class="foot">
+  <section class="about" aria-labelledby="about-title">
+    <h2 id="about-title">About Quote of the day</h2>
+    <p>Quote of the day shows one short, famous quote for each day, with a new one on every tap. Copy it or share it on X. It is a practice project by Zakria Khan (zakyprojects).</p>
+    <h3>How to use</h3>
+    <ol>
+      <li>Open the page to see today&#x27;s quote.</li>
+      <li>Tap New quote, or press the Space key, for another one.</li>
+      <li>Copy the quote or share it on X.</li>
+    </ol>
+    <h3>Questions</h3>
+    <details><summary>Is it free?</summary><p>Yes. It is free and needs no account.</p></details>
+    <details><summary>Does the quote change every day?</summary><p>Yes. Everyone sees the same quote on the same day, and New quote gives you more.</p></details>
+    <details><summary>Will I see the same quote twice?</summary><p>Not until you have seen all of them.</p></details>
+    <details><summary>Who made it?</summary><p>Zakria Khan, a web developer. You can see his other projects on zakyprojects.github.io.</p></details>
+  </section>
+
+<footer class="foot">
     <a href="https://zakyprojects.github.io/">Made by Zakria</a>
   </footer>
 
